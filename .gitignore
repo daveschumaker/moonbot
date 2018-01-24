@@ -1,0 +1,6 @@
+*.DS_Store
+*.log
+config.js
+db/trades_db.sqlite
+db/trades_db.sqlite-journal
+node_modules

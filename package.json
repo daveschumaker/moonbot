@@ -1,0 +1,42 @@
+{
+  "name": "moonbot",
+  "version": "0.1.0",
+  "description": "A Very Simple Cryptocurrency Trading Bot",
+  "main": "moonbot.js",
+  "scripts": {
+    "dev": "node ./moonbot-dev.js",
+    "start": "./moonbot.js",
+    "test": "tape 'tests/**/*.js' | tap-spec"
+  },
+  "author": "Dave Schumaker",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/daveschumaker/moonbot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/daveschumaker/moonbot/issues"
+  },
+  "dependencies": {
+    "app-root-path": "2.0.1",
+    "binance": "1.3.1",
+    "chokidar": "2.0.0",
+    "colors": "1.1.2",
+    "columnify": "1.5.4",
+    "dateformat": "3.0.2",
+    "invalidate-module": "1.0.0",
+    "keras-js": "1.0.2",
+    "lodash": "4.17.4",
+    "minimist": "1.2.0",
+    "number-abbreviate": "2.0.0",
+    "numbro": "2.0.4",
+    "request": "2.83.0",
+    "sqlite3": "3.1.13",
+    "technicalindicators": "1.1.1",
+    "timebucket": "0.4.0"
+  },
+  "devDependencies": {
+    "tap-spec": "4.1.1",
+    "tape": "4.8.0"
+  }
+}
