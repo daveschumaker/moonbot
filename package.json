@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "description": "A Very Simple Cryptocurrency Trading Bot",
   "main": "moonbot.js",
+  "bin": {
+    "moonbot": "./moonbot.js"
+  },
   "scripts": {
     "dev": "node ./moonbot-dev.js",
     "start": "./moonbot.js",

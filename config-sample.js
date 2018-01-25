@@ -33,6 +33,6 @@ config.balance.maxCapitalToUse = 50;    // NUM: Max percentage of your total cap
 
 config.trades = {};
 config.trades.lossProtection = true;    // BOOL: Never sell a coin for less than it was bought.
-config.trades.period = 1;            // STRING: Interval time (in seconds!).
+config.trades.period = 30;            // STRING: Interval time (in seconds!).
 
 module.exports = config;
