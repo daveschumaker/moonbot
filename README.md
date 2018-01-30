@@ -23,11 +23,59 @@ To get started, follow the steps below:
 > ./moonbot.js
 ```
 
+Optionally, you can also run `npm link` from the root folder of the _MoonBot_ project and it will be available as a global binary that you can run from anywhere on your system using `moonbot`.
+
 _MoonBot_ will begin fetching real data from Binance and display the results in your terminal.
 
 ## Setup
 
 Open `config.js` in the root project directory and enter your relevant configuration details (the Binance API key is optional at this time and will only used for fetching and placing orders with your personal account). You do not need it to run _MoonBot_ in its default simulation mode.
+
+## How to run MoonBot
+
+To get started with default options using the sample configuration file, simply start the project with `npm start`. Some additional tools are provided.
+
+### Backfill older trade data.
+
+```
+moonbot backfill
+
+  Usage: backfill [options]
+
+  Add trade details for a particular symbol to database for use in sims and calculating longer period data.
+
+  Options:
+
+    --dateFrom <YYYYMMDD>   Required: Initial date to start fetching trade data from.
+    --dateTo <YYYYMMDD>     Optional: Date to stop fetching trade data. Defaults to current date.
+    --symbol <name>         Optional: Market symbol for trade data to fetch. Defaults to config.js.
+
+  Example:
+
+    moonbot backfill --dateFrom 20180101 --symbol NEOETH
+```
+
+### Simulate trade strategy
+
+[WORK IN PROGRESS] Iterate through backfilled data for a certain period of time and simulate placing buy / sell orders based on a trading strategy that you provide.
+
+```
+moonbot sim
+
+  Usage: sim [options]
+
+  Add trade details for a particular symbol to database for use in sims and calculating longer period data.
+
+  Options:
+
+    --dateFrom <YYYYMMDD>   Required: Initial date to start simulation from.
+    --dateTo <YYYYMMDD>     Required: Date to stop simulated.
+    --symbol <name>         Optional: Market symbol used for simulation. Defaults to config.js.
+
+  Example:
+
+    moonbot sim --dateFrom 20180101 --dateTo 20180107 --symbol NEOETH
+```
 
 ## To do
 
