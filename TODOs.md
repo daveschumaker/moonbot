@@ -2,11 +2,11 @@
 
 ## Big Features
 
-* Show time of last buy or time of last sell (and details / price) in info panel.
+* Ideally, we should run all technical analysis calculations at each period and make it available to our API (using Express?)
+* Serve up an API via Express or Koa and control the bot that way, rather than through the command line. Serve all the info up in a nice webpage (graphs, control the bot, execute orders, etc).
 * When checking sell price, if profit won't even cover fees (e.g., 0.1%), don't sell.
 * Preserve profit: Track max profit for asets and then sell if profit dips X percent.
-* Keypress to trigger tickerDetails at any time (e.g., 't'). Useful for longer periods.
-* Use DB to persist profit / loss data, num of sells, etc. (Maybe Sqlite instead of NedDB);
+* Use DB to persist profit / loss data, num of sells, etc.
 * Info page needs to show starting balance, assets, total and compare with current stuff (and show a diff). Bonus: Table view.
 * For the above, show time of last trade and sell (and amounts, cost, profit, etc);
 * Make sure we always start with a buy (NEVER SELL AT FIRST)
