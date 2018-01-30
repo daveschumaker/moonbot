@@ -79,4 +79,4 @@ moonbot sim
 
 ## To do
 
-There are a number of things still to implement and cleanup.
+There are a number of things still to implement and cleanup. A small sample of ideas can be found inside [TODOs.md](TODOs.md)
