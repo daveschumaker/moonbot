@@ -9,7 +9,7 @@ This project is an attempt to build an automated bot for trading cryptocurrencie
 
 <sub>\*Most likely not going to the moon.</sub>
 
-**IMPORTANT: If you use this for live trading, you will MOST LIKELY LOSE MONEY.**
+**IMPORTANT: In order to use LIVE trading, you will need to provide your Binance API key in `config.js`. Note that if you use enable live trading, you will MOST LIKELY / PROBABLY / DEFINITELY LOSE MONEY.**
 
 ## Installation & Usage
 
