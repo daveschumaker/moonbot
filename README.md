@@ -3,6 +3,8 @@
 
 _Hold on tight, folks. We're going to the moon!*_
 
+![Boot Screen](docs/boot-screen.png);
+
 **Please Note:** This is a work in progress.
 
 This project is an attempt to build an automated bot for trading cryptocurrencies. Some ideas are based upon the work of others who've come before, notably [Zenbot](https://github.com/DeviaVir/zenbot) and [Gekko](https://github.com/askmike/gekko).
