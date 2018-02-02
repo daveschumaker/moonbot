@@ -3,7 +3,7 @@
 
 _Hold on tight, folks. We're going to the moon!*_
 
-![Boot Screen](docs/boot-screen.png);
+![Boot Screen](docs/boot-screen.png)
 
 **Please Note:** This is a work in progress.
 
