@@ -14,14 +14,14 @@ config.binance.secret = '';
 // Sets the symbols used for trading and combines them for various markets when needed.
 // e.g., If you want to trade LTC/ETH, coinSymbol would be 'LTC' and capitalSymbol would
 // be 'ETH'.
-config.coinSymbol = 'TRX';        // Symbol for crypto-coin to purchase. e.g., 'LTC'
+config.coinSymbol = 'NANO';        // Symbol for crypto-coin to purchase. e.g., 'LTC'
 config.capitalSymbol = 'ETH';    // Symbol for currency used. e.g., 'ETH'
 
 /*
  * ASSETS AND CAPITAL
  */
 config.balance = {}
-config.balance.capital = 1;         // NUM: Capital used to buy coins / tokens
+config.balance.capital = .5;         // NUM: Capital used to buy coins / tokens
 config.balance.assets = 0;          // NUM: Number of tokens currently in possession.
 
 config.balance.maxAssetsToUse = 50;     // NUM: Max percentage of your total balance to sell at once.
@@ -33,6 +33,6 @@ config.balance.maxCapitalToUse = 50;    // NUM: Max percentage of your total cap
 
 config.trades = {};
 config.trades.lossProtection = true;    // BOOL: Never sell a coin for less than it was bought.
-config.trades.period = 30;            // STRING: Interval time (in seconds!).
+config.trades.period = 10;            // STRING: Interval time (in seconds!).
 
 module.exports = config;
